@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>email validate</title>
+
+    <script type="text/javascript">
+    
+function validate() {
+    
+        
+        var mail=document.fm.mail.value;
+        if(mail.length<1)
+        {
+          alert("kindly fill the E-Mail");
+         // document.registrationForm.n1.focus();
+        }
+   
+        var m=document.fm.mail.value;
+        st=/@/.test(m);
+        if(st == false)
+        {
+        alert("Enter a valid E-maila ddress ( 'at symbol' should be present in ur email)");
+        }
+
+        var m1=document.fm.mail.value;
+        var re = m1.split("@");
+        var lr = /[.]/.test(re[1]);
+        if(lr == false)
+        {
+        alert("Enter a valid E-mail address (utleast 'one dot' should be present in Domain name ) ");
+        }
+
+        var m2=document.fm.mail.value;
+        var rlt = /[^a-zA-Z0-9]/.test(m2[0]);
+        if( rlt == true )
+        {
+        alert("Enter a valid E-mail address(special character cannot appear as the first character in an email address)");
+        } 
+
+        var m3=document.fm.mail.value;
+        var rlt1 = /[^a-zA-Z0-9]/.test(m3[m3.length -1]);
+        if( rlt1 == true )
+        {
+        alert("Enter a valid E-mail address(special character cannot appear as the last character in an email address)");
+        } 
+
+        var m4=document.fm.mail.value;
+        var p1 = /[^a-zA-Z0-9!#$%&'*+-/=?^_`{|}~]+/g;
+        var r1 = m4.match(p1);
+        if(r1.length>1)
+        {
+        alert("Enter a valid E-mail address (Alternative Special characters is not allowed )");
+        }
+
+        var m5=document.fm.mail.value;
+        var p2 = /[^a-zA-Z0-9]+/g;
+        var r2 = m5.match(p2);
+        for(var i=0;i<r2.length;i++)
+        {
+        for(var j=0;j<r2[i].length;j++)
+        {
+        if(r2[i][j]==r2[i][j+1])
+        {
+        alert("Enter a valid E-mailaddress (Special characters should not occur in consecutive orders)");
+        }
+        }
+        } 
+        var m6=document.fm.mail.value;
+        var res = m6.split("@");
+        var p3 = /[^a-zA-Z0-9-.]+/g;
+        var r3 = res[1].match(p3);
+        if(r3.length>0)
+        {
+        alert("Enter a valid E-mailaddress (Special characters other than 'dot'and 'hyphen' are not allowed in Domain name)");
+        }
+        }
+</script>
+</head>
+<body style="background-image:url('https://image.freepik.com/free-vector/brick-wall-with-spot-lights-background_23-2148632842.jpg'); background-repeat: no-repeat; background-size:cover;visibility: visible;">
+    <div  >
+    <form method="post" name="fm" id="myForm" >
+       
+    <table cellpadding="15" align="center" class="tab" >
+        
+       
+         <tr>
+         <br><br><br><br><br><br><br><br><br><br><br>
+         <tr><h1 style="text-align:center; font-size:50px;color:#14FEF2">Mail validation</h1></tr>
+         <br><br>
+          <td><label class="la" style="color:#641E16; line-height: 1; color:#1A0212;font-size:25px">E-mail : </label></td>
+           <td>  <input type="text" style="width:100%"name="mail" id="n1" /></td> 
+             </tr>
+             <tr>
+       
+        <td><button type="button"  class="bu" value="Submit" onclick="validate()">Submit
+        </button></td>
+       
+        </tr>
+        
+        </table>
+        </div>
+</form>
+<br>
+<br><br><br><br><br>
+</body>
+</html>

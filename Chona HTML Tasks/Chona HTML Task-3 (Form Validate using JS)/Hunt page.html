@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HUNT page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        .list{
+text-align: right;
+float:right;
+visibility: visible;
+}
+.list ul li {
+color:rgb(128, 0, 0);
+display: inline-block;
+text-align: center;
+padding: 40px 40px;
+font-size: 15px;
+position: relative;
+visibility: visible;
+
+}
+.list ul li a{
+color:#FDFEFE ;
+text-decoration: none;
+visibility: visible;
+}
+.list ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #D87B72;
+display: block;
+margin: auto;
+transition: 0.5s;
+visibility: visible;
+}
+.list ul li:hover::after{
+width: 100%;
+visibility: visible;
+}
+.hd{
+    position: absolute;
+    top : 20px;
+    left: 200px;
+    font-family: 'Tangerine', cursive; 
+    font-size: 40px; 
+    text-decoration-color:#FAD7A0 ;
+    line-height: 1;
+    text-align: center;
+  visibility: visible;
+   
+}
+.f{
+    background-image:  url('https://drive.google.com/uc?id=1bk00QaTzG4HnngWQk6BoTTa_3WfyO7wy');
+     background-size: cover ; 
+     background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 500px;
+     width: 550px; 
+     height: 720px; 
+     text-align: center;   
+     opacity:0.8; 
+
+}
+.tab{
+    position: relative;
+    
+    left: 10px;
+}
+.la{
+    font-family: 'Tangerine', cursive; 
+    font-size: 29px; 
+    text-decoration-color:#FAD7A0 ;
+    line-height: 1;
+    
+}
+input[type="text"]{
+background-color:rgba(0, 0, 0, 0);
+border-color:#922B21;
+border-style: dashed;
+line-height: 1;
+visibility: visible;
+animation: neon 1s ease-in-out infinite alternate;
+
+ }
+ input[type="text"]:focus { 
+    outline:none;
+    line-height: 1;
+    border-color:#922B21 ;
+    box-shadow:0 0 10px #922B21 ;
+}
+.bu{
+  position: relative;
+  left:-100px;
+  background-color:rgba(0, 0, 0, 0);
+  border: dotted;
+  font-family: 'Tangerine', cursive;
+  color:#78281F;
+  font-size: 22px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.bu:hover{
+  background-color:#D98880;
+}
+
+
+
+
+
+    </style>
+
+<script type="text/javascript">
+    
+function validate() {
+    
+        var fname=document.fm.fname.value;
+        if(fname.length < 5 || fname.length>20)
+        {
+        alert("First Name field Minimum length should be 5 and maximum length should be 20");
+        //document.registrationForm.n1.focus();
+        }
+         var lname=document.fm.lname.value;
+        if(lname.length < 5 || fname.length>20)
+        {
+        alert("Last Name field Minimum length should be 5 and maximum length should be 20");
+        //document.registrationForm.n1.focus();
+        }
+        var mail=document.fm.mail.value;
+        if(mail.length<1)
+        {
+          alert("kindly fill the E-Mail");
+         // document.registrationForm.n1.focus();
+        }
+        var pno=document.fm.pno.value;
+        if(pno.length<1)
+        {
+          alert("kindly fill the Phone Number");
+         // document.registrationForm.n1.focus();
+        }
+        if(document.getElementById("ra1").checked == false && document.getElementById("ra2").checked == false)
+        {
+           alert("kindly fill the Create account"); 
+        }
+        if((document.getElementById("d1").checked == false && document.getElementById("d2").checked == false) && (document.getElementById("d3").checked == false) )
+        {
+            alert("kindly fill the Preferred domain");
+        }
+        if(document.getElementById("con").checked == false)
+        {
+           alert("kindly fill the Country"); 
+        }
+        if((document.getElementById("d1").checked == false && document.getElementById("d2").checked == false) && (document.getElementById("d3").checked == true ))
+        {
+            alert("kindly fill utleast two domain");
+        }else if((document.getElementById("d1").checked == false && document.getElementById("d3").checked == false) && (document.getElementById("d2").checked == true ))
+        {
+            alert("kindly fill utleast two domain");
+        }else if((document.getElementById("d2").checked == false && document.getElementById("d3").checked == false) && (document.getElementById("d1").checked == true ))
+        {
+            alert("kindly fill utleast two domain");
+        }
+        
+        
+        var m=document.fm.mail.value;
+        st=/@/.test(m);
+        if(st == false)
+        {
+        alert("Enter a valid E-maila ddress ( 'at symbol' should be present in ur email)");
+        }
+
+        var m1=document.fm.mail.value;
+        var re = m1.split("@");
+        var lr = /[.]/.test(re[1]);
+        if(lr == false)
+        {
+        alert("Enter a valid E-mail address (utleast 'one dot' should be present in Domain name ) ");
+        }
+
+        var m2=document.fm.mail.value;
+        var rlt = /[^a-zA-Z0-9]/.test(m2[0]);
+        if( rlt == true )
+        {
+        alert("noooo");
+        } 
+
+        var m3=document.fm.mail.value;
+        var rlt1 = /[^a-zA-Z0-9]/.test(m3[m3.length -1]);
+        if( rlt1 == true )
+        {
+        alert("no");
+        } 
+
+        var m4=document.fm.mail.value;
+        var p1 = /[^a-zA-Z0-9!#$%&'*+-/=?^_`{|}~]+/g;
+        var r1 = m4.match(p1);
+        if(r1.length>1)
+        {
+        alert("Enter a valid E-mail address (Alternative Special characters is not allowed )");
+        }
+
+        var m5=document.fm.mail.value;
+        var p2 = /[^a-zA-Z0-9]+/g;
+        var r2 = m5.match(p2);
+        for(var i=0;i<r2.length;i++)
+        {
+        for(var j=0;j<r2[i].length;j++)
+        {
+        if(r2[i][j]==r2[i][j+1])
+        {
+        alert("Enter a valid E-mailaddress (Special characters should not occur in consecutive orders)");
+        }
+        }
+        } 
+        var m6=document.fm.mail.value;
+        var res = m6.split("@");
+        var p3 = /[^a-zA-Z0-9-.]+/g;
+        var r3 = res[1].match(p3);
+        if(r3.length>0)
+        {
+        alert("Enter a valid E-mailaddress (Special characters other than 'dot'and 'hyphen' are not allowed in email)");
+        }
+        
+
+
+  
+  
+    }
+
+
+    function reset(){
+
+        document.fm.fname.value="";
+        document.fm.lname.value="";
+        document.fm.email.value="";
+        document.fm.pno.value="";
+        document.fm.accoun.value="";
+        document.fm.domain.value="";
+        document.fm.country.value="";
+
+        var input=document.querySelectorAll('.check');
+    
+        for(var i=0;i<input.length;i++){
+            input[i].checked=false;
+        }
+    }
+
+</script>
+</head>
+<body style="background-image:url('https://thumbs.gfycat.com/MaleHiddenDugong-size_restricted.gif'); background-repeat: no-repeat; background-size:cover;visibility: visible;">
+    
+    <div class="list" >
+
+ <ul>
+   <li><a href="">ABOUT </a></li>
+   <li><a href="file:///D:/HTML/Hunt%20page.html">MAIL HUNT </a></li>
+   <li><a href="">CONTACT</a></li>
+ </ul>
+</div>
+
+
+<div  class="f" >
+ <h1 class="hd">Mail Hunt</h1>
+    <form method="post" name="fm" id="myForm" >
+       
+    <table cellpadding="15" align="center" class="tab" >
+        <tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr>
+        <tr>
+        <td><label class="la" style="color:#641E16; line-height: 1;">First Name: </label></td>
+          <td>  <input  type="text" name="fname" id="n1" /></td>
+          </tr>
+           <tr>
+        <td><label class="la" style="color:#641E16; line-height: 1;">Last Name : </label></td>
+             <td> <input type="text" name="lname" id="n1" /></td>
+              </tr>
+         <tr>
+        <td><label class="la" style="color:#641E16; line-height: 1;">E-mail : </label></td>
+           <td>  <input type="text" name="mail" id="n1" /></td> 
+             </tr>
+             <tr>
+        <td><label class="la" style="color:#641E16; line-height: 1;">Phone Number : </label></td>
+            <td> <input type="text" name="pno" /></td>
+             </tr>
+              <tr>
+       <td> <label class="la" style="color:#641E16; line-height: 1;">Create<br> account :</label></td>   
+           <td><input id="ra1" type="radio" value="For myself" name="account">
+            <label class="la" style="color:#641E16; line-height: 1;">For myself</label><br>
+            <input type="radio" id="ra2" value="To manage my business" name="account">
+            <label class="la" style="color:#641E16; line-height: 1;">To manage my business</label> </td>
+        </tr>
+              <tr>
+       <td> <label class="la" style="color:#641E16; line-height: 1;" >Preferred domain : </label>
+          <td><input type="checkbox" id="d1" style="background-color:rgba(0, 0, 0, 0);" value="Gmail" name="domain">
+            <label class="la" style="color:#641E16; line-height: 1;">Gmail</label><br>
+            <input type="checkbox" id="d2" value="Yahoo! Mail" name="domain">
+            <label class="la" style="color:#641E16; line-height: 1;">Yahoo! Mail</label><br>
+            <input type="checkbox" id="d3" value="Outlook" name="domain"><label class="la" style="color:#641E16; line-height: 1;">Outlook</label><br></td>
+            </tr>
+            
+        <tr>
+        <td><label class="la" style="color:#641E16; line-height: 1;">Country :</label></td>
+                <td><select name="country" id="con">
+                <option value="">---Select---</option>
+                <option value="india">India</option>
+                <option value="us">US</option>
+                <option value="spain">Spain</option>
+                <option value="German">Germany</option>
+                <option value="uk">UK</option></td>
+            </select></td>
+            </tr>
+            <tr>
+            <td></td>
+        <td><button type="button" class="bu" value="Submit" onclick="validate()">Submit
+        </button></td>
+       <td> <button type="button" class="bu" value="Reset" onclick="reset()">Reset
+       </button></td>
+        </tr>
+        
+        </table>
+        </div>
+</form>
+<br>
+<br><br><br><br><br>
+</body>
+</html>

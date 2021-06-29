@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+
+
+<style>
+*{
+margin:0;
+
+}
+.h{
+background-image:  url('https://st.depositphotos.com/1001004/1369/i/950/depositphotos_13696218-stock-photo-vintage-background-with-beautiful-photo.jpg');
+background-repeat:no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.glow {
+  position: relative;
+ font-family: 'Ballet', cursive; 
+ font-size: 45px; 
+left:550px;
+
+}
+
+
+#silk{
+font-family: 'ZCOOL KuaiLe', cursive; 
+font-size: 50px;
+}
+.list{
+text-align: right;
+position: absolute;
+background-image: url('https://i.pinimg.com/474x/8d/fb/cb/8dfbcbf8e1f545329e4a61f8af45664c.jpg');
+background-size: cover ;
+height: 100vh;
+width: 200px;
+top: 0;
+right: -300px;
+z-index: 2;
+transition: 1s;
+}
+.list ul li {
+color: #78281F;
+font-family: 'Charm', cursive;
+display: block;
+text-align: center;
+padding: 15px 15px;
+font-size: 20px;
+position: relative;
+}
+.list ul li a{
+color:#78281F; ;
+text-decoration: none;
+}
+.list ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background:#78281F;;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.list ul li:hover::after{
+width: 100%;
+}
+div.info{
+  position: relative;
+
+}
+.info h1{
+color: #78281F;
+}
+.info ul{
+position: relative;
+list-style-type: none;
+color: #78281F;
+display: table;
+visibility: visible;
+left:400px;
+font-family: 'Charm', cursive;
+font-size: 25px
+}
+.button{
+  position: relative;
+  left:600px;
+  background-color:rgba(0, 0, 0, 0);
+  border: dotted;
+  font-family: 'Charm', cursive;
+  color:#78281F;
+  font-size: 22px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.button:hover{
+  background-color:#D98880;
+}
+.o{
+display: block;
+text-align: right;
+padding: 20px 20px;
+cursor: pointer;
+font-size: 25px;
+color:#F2F3F4;
+onclick:showMenu()
+}
+.c{
+  position: relative;
+  left: 150px;
+display: block;
+text-align: left;
+padding: 20px 20px;
+cursor: pointer;
+font-size: 22px;
+color:#78281F;
+onclick:hideMenu()
+}
+
+@media(max-width: 700px){
+.glow {
+  font-size: 40px; 
+  }
+.list ul li {
+display: block;
+text-align: left;
+padding: 20px 0px;
+}
+.list{
+position: absolute;
+background:#F2F3F4;
+height: 100vh;
+width: 200px;
+top: 0;
+right: -200px;
+z-index: 2;
+transition: 1s;
+}
+.list ul li a{
+font-size: 15px;
+color:#3498DB;
+}
+.c{
+display: block;
+text-align: left;
+padding: 20px 20px;
+cursor: pointer;
+font-size: 22px;
+color:#3498DB;
+
+}
+.o{
+display: block;
+text-align: right;
+padding: 0px 20px;
+cursor: pointer;
+font-size: 25px;
+color:#F2F3F4;
+}
+#silk{
+font-size: 50px;
+}
+.info ul{
+font-size: 18px;
+}
+.list ul li::after{
+display: none;
+}
+
+}
+</style>
+</head>
+
+
+<body>
+<section class="h">
+<nav > 
+<br><br><br><br><br><br>
+<span class="o" onclick="showMenu()" >&#9776;</span>
+<div class="list" id="liid">
+  <br><br><br><br>
+  <span class="c" onclick="hideMenu()">&#10008;</span>
+ <ul>
+   <li ><a href="">ABOUT </a></li>
+   <li><a href="file:///D:/HTML/Hunt%20page.html">MAIL HUNT </a></li>
+   <li><a href="">CONTACT</a></li>
+ </ul>
+</div>
+
+<div class="info" style="right: 0px;">
+   <h2 class="glow" style="color: #78281F;" >Mail Hunt</h2>
+<br>
+<ul>
+<li><span>&#10031;</span>Are uh confused about picking an perfect mail id?</li>
+<li><span>&#10031;</span>Dont worry, we will help you in it...</li>
+<li><span>&#10031;</span>Common click on the below button to know more!</li>
+</ul>
+<br>
+<br>
+<a href="file:///D:/HTML/Hunt%20page.html"><button class="button"><label class="km">know more!</button></label></a>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</nav>
+</section>
+
+<script type="text/javascript">
+  var li=document.getElementById("liid");
+  function showMenu()
+  {
+    li.style.right="0";
+  }
+  function hideMenu()
+  {
+    li.style.right="-300px";
+  }
+</script>
+</body>
+</html>
