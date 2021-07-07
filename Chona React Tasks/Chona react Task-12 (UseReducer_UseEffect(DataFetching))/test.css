@@ -1,0 +1,33 @@
+table.scroll tbody,
+table.scroll thead tr {
+  display: block;
+}
+
+table.scroll tbody {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.b {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20201027/pngtree-beautiful-blue-winter-snowy-background-image_434644.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.glow {
+  font-family: MV Boli;
+  font-size: 50px;
+  color: #fdfefe;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-align: center;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 30px #00b3ff,
+      0 0 40px #00b3ff, 0 0 50px #00b3ff, 0 0 60px #00b3ff, 0 0 70px #00b3ff;
+  }
+
+  to {
+    text-align: center;
+    text-shadow: 0 0 20px #00b3ff, 0 0 30px #00b3ff, 0 0 40px #00b3ff,
+      0 0 50px #00b3ff, 0 0 60px #00b3ff, 0 0 70px #00b3ff, 0 0 80px #00b3ff;
+  }
+}
