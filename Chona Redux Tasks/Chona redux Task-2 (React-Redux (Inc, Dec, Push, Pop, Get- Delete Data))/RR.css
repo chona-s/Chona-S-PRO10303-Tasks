@@ -1,0 +1,215 @@
+.c1 {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  left: 150px;
+  float: left;
+}
+
+.d1,
+.d11 {
+  position: absolute;
+}
+.d1 {
+  width: 500px;
+  height: 300px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyF0Nc6SpOfJNf5aFF7szEcnJiP3M6NIyQqQ&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 5px 5px whitesmoke;
+  border: 2px solid violet;
+  opacity: 0.6;
+  border-radius: 30px;
+}
+.d11 {
+  top: 50px;
+  left: 90px;
+  color: Aqua;
+  font-size: 20px;
+}
+.t1 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cb1 {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: violet;
+  box-shadow: 2px 2px 5px 2px violet;
+  color: pink;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.cb2 {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: violet;
+  box-shadow: 2px 2px 5px 2px violet;
+  color: pink;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.c2 {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  left: 950px;
+}
+
+.d2,
+.d22 {
+  position: absolute;
+}
+.d2 {
+  width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyLZ8_mnO_FodSXyhrP8ZoqStB-OUxUcMFzw&usqp=CAU");
+  opacity: 0.5;
+  box-shadow: 0px 0px 5px 5px whitesmoke;
+  border: 2px solid violet;
+  border-radius: 30px;
+}
+.d22 {
+  top: 60px;
+  left: 60px;
+  color: Aqua;
+  font-size: 18px;
+}
+.t2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ab1 {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: violet;
+  box-shadow: 2px 2px 5px 2px violet;
+  color: pink;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.ab2 {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: violet;
+  box-shadow: 2px 2px 5px 2px violet;
+  color: pink;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.c3 {
+  width: 900px;
+  height: 500px;
+  position: relative;
+  left: 400px;
+  top: 50px;
+}
+
+.d3,
+.d33 {
+  position: absolute;
+}
+.d3 {
+  width: 930px;
+  height: 600px;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-atmospheric-fantasy-sky-hd-background-image_200907.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  box-shadow: 0px 0px 5px 5px whitesmoke;
+  border: 2px solid violet;
+  border-radius: 30px;
+}
+.d33 {
+  top: 60px;
+  left: 30px;
+  color: Aqua;
+}
+.t3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.bui,
+.bid,
+.btit,
+.bb {
+  border: 1px solid black;
+}
+.bui {
+  width: 37px;
+}
+.bid {
+  width: 15px;
+}
+.btit {
+  width: 44.8%;
+}
+table.sc tbody,
+table.sc thead tr td {
+  background-color: transparent;
+}
+table.sc tbody,
+table.sc thead tr {
+  display: block;
+}
+table.sc tbody {
+  overflow-x: hidden;
+  overflow-y: auto transparent;
+}
+.gb1 {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: violet;
+  box-shadow: 2px 2px 5px 2px violet;
+  color: pink;
+  padding: 3px 8px;
+}
+.gb2 {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: violet;
+  box-shadow: 2px 2px 5px 2px violet;
+  color: pink;
+  padding: 3px 8px;
+}
+.bbg {
+  background-image: url("https://image.freepik.com/free-photo/high-definition-star-field-colorful-night-sky-space-nebula-galaxies-space-astronomy-concept-background_232070-8070.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1100px;
+}
+.glow {
+  font-family: MV Boli;
+  font-size: 50px;
+  color: #fdfefe;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-align: center;
+    text-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 30px violet,
+      0 0 40px violet, 0 0 50px violet, 0 0 60px violet, 0 0 70px violet;
+  }
+
+  to {
+    text-align: center;
+    text-shadow: 0 0 20px violet, 0 0 30px violet, 0 0 40px violet,
+      0 0 50px violet, 0 0 60px violet, 0 0 70px violet, 0 0 80px violet;
+  }
+}
